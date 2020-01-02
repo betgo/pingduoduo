@@ -17,7 +17,7 @@ export interface TopMenu {
   templateUrl: './scrollable-tab.component.html',
   styleUrls: ['./scrollable-tab.component.css']
 })
-export class ScrollableTabComponent implements OnInit {
+export class ScrollableTabComponent {
   @Input() selectedTabLink: string;
   @Input() menus: TopMenu[] = [];
   @Input() backgroundColor = '#fff';
@@ -37,5 +37,4 @@ export class ScrollableTabComponent implements OnInit {
   handleSelection(index: number) {
     this.tabSelected.emit(this.menus[index]);
   }
-}
 }

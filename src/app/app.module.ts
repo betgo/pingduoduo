@@ -8,10 +8,12 @@ import { HorizontalGridComponent } from './component/horizontal-grid/horizontal-
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './home/home.module';
+import { Ago } from './component/pipe/ago.pipe.ts/ago.pipe.ts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    Ago.Pipe.TsComponent,
 
   ],
   imports: [
